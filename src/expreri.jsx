@@ -11,7 +11,11 @@ const Experience = () => {
   const skills = [
     { name: 'HTML', level: 'Experienced' },
     { name: 'JavaScript', level: 'Experienced' },
+    { name: 'TypeScript', level: 'Experienced' },
     { name: 'React', level: 'Experienced' },
+    { name: 'Nextjs', level: 'Experienced' },
+    { name: 'Node', level: 'Experienced' },
+
     { name: 'Java', level: 'Experienced' },
     { name: 'CSS', level: 'Basic' },
     { name: 'Tailwindcss', level: 'Basic' },
@@ -45,7 +49,24 @@ const Experience = () => {
         <div className="about-containers">
           <div className="details-container">
             <div className="article-container">
-              {skills.slice(4).map((skill, index) => (
+              {skills.slice(4,7).map((skill, index) => (
+                <article key={index}>
+                  <img src={checkmarkIcon} alt="Experience icon" className="icon" />
+                  <div>
+                    <h3>{skill.name}</h3>
+                    <p>{skill.level}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="experience-details-container" data-aos="fade-down-left">
+        <div className="about-containers">
+          <div className="details-container">
+            <div className="article-container">
+              {skills.slice(7).map((skill, index) => (
                 <article key={index}>
                   <img src={checkmarkIcon} alt="Experience icon" className="icon" />
                   <div>
