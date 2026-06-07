@@ -13,9 +13,7 @@ const Experience = () => {
     { name: 'JavaScript', level: 'Experienced' },
     { name: 'TypeScript', level: 'Experienced' },
     { name: 'React', level: 'Experienced' },
-    { name: 'Nextjs', level: 'Experienced' },
     { name: 'Node', level: 'Experienced' },
-
     { name: 'Java', level: 'Experienced' },
     { name: 'CSS', level: 'Basic' },
     { name: 'Tailwindcss', level: 'Basic' },
